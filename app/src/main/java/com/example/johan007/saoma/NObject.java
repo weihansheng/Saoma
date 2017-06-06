@@ -15,7 +15,7 @@ public class NObject <T> implements Serializable {
     public final String ErrorMsg ;*/
   public final String error;
     public final String status;
-    public final String result;
+    public final Object result;
 
    /* public NObject(boolean opValid, T data, boolean isRqstSuccess, String errorMsg) {
         OpValid = opValid;
@@ -24,9 +24,18 @@ public class NObject <T> implements Serializable {
         ErrorMsg = errorMsg;
     }*/
 
-    public NObject(String error, String status, String result) {
+    public NObject(String error, String status, Object result) {
         this.error = error;
         this.status = status;
         this.result = result;
+    }
+
+    @Override
+    public String toString() {
+        return "NObject{" +
+                "error='" + error + '\'' +
+                ", status='" + status + '\'' +
+                ", result=" + result +
+                '}';
     }
 }

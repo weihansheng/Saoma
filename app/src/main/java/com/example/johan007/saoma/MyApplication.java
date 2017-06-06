@@ -9,9 +9,13 @@ import com.uuzuche.lib_zxing.activity.ZXingLibrary;
  */
 
 public class MyApplication extends Application {
+    public static MyApplication context;
     @Override
     public void onCreate() {
         super.onCreate();
+        if (context == null) {
+            context = this;
+        }
         ZXingLibrary.initDisplayOpinion(this);
     }
 }
