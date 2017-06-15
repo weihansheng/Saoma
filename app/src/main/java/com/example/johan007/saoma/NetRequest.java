@@ -17,10 +17,10 @@ import rx.schedulers.Schedulers;
 public class NetRequest {
     public final static String TEMP_UPLOAD_IMAGE_PREFIX = "tmp";
     public final static int IMAGE_SIZE_THRESHOLD = 400 * 1024;//400K
-    public final static String BASE_URL = "http://116.62.56.64:8081";
-    public final static String LINE_UP_URL = "http://116.62.56.64:8081";
+    public final static String BASE_URL = "http://118.178.230.233:8090";
+    public final static String LINE_UP_URL = "http://118.178.230.233:8090";
     //    public final static String LINE_UP_URL = "http://115.28.12.120";
-    public final static String AFFAIR_URL = "http://116.62.56.64:8081";
+    public final static String AFFAIR_URL = "http://118.178.230.233:8090";
     public static APIClient APIInstance;
     public static APIClient APIInstance2;
     public static Cache cache;
